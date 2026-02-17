@@ -261,7 +261,6 @@ You should see the search form. Try:
    ├─ Iterates over transactions
    ├─ Renders table rows
    ├─ Displays pagination controls
-   └─ Shows "Page 1 of 14 | 347 total"
 
 10. Browser → User
     HTML rendered with results
@@ -335,7 +334,7 @@ curl -X POST http://localhost:8080/game-transaction-application/transaction/repo
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 
@@ -346,28 +345,6 @@ mvn test
 # Run specific test class
 mvn test -Dtest=AccountTranServiceTest
 ```
-
-### Manual Testing Checklist
-
-- [ ] Search form loads
-- [ ] All filters work individually
-- [ ] Multiple filters work together
-- [ ] Sorting works (all 9 columns)
-- [ ] Pagination works (first, previous, next, last)
-- [ ] Page size selector works (25, 50)
-- [ ] No transactions found message displays
-- [ ] Error messages display correctly
-- [ ] Date validation works
-- [ ] Amount/balance calculations correct
-- [ ] Performance acceptable for 100K+ records
-
-### Test Data
-
-40+ transactions provided in `database-setup.sql`:
-- 8 test accounts (1001-1008)
-- Multiple games, platforms, channels
-- Last 7 days of data
-- Various transaction types
 
 ---
 
