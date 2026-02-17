@@ -20,7 +20,7 @@ This application uses:
 - **MySQL 8.0**
 - **Tomcat 9**
 
-**Key Design**: Database-level pagination using Spring Data JPA's `Pageable` interface. All filtering, sorting, and pagination handled on the server side.
+**Key Design**: Database-level pagination using Spring Data JPA's `Pageable` interface. All filtering, sorting, and pagination are handled on the server side.
 
 ---
 
@@ -51,7 +51,7 @@ Before you start, ensure you have:
 
 **Windows:**
 1. Java: Download from [Oracle](https://www.oracle.com/java/technologies/downloads/) or use [OpenJDK](https://jdk.java.net/)
-2. Maven: Download from [apache.org](https://maven.apache.org/download.cgi), extract, add to PATH
+2. Maven: Download from [apache.org](https://maven.apache.org/download.cgi), extract, and add to PATH
 3. MySQL: Download [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
 **macOS (using Homebrew):**
@@ -119,7 +119,7 @@ db.pool.maxSize=20
 # Clean and build
 mvn clean package
 
-# Output: target/game-transaction-report.war (success!)
+# Output: target/game-transaction-application.war (success!)
 ```
 
 ### Step 5: Deploy and Run
