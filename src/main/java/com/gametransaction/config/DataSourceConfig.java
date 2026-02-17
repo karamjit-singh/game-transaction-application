@@ -17,11 +17,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Database and Hibernate Configuration with Spring Data JPA
- * Enables JpaRepositories for automatic Spring Data JPA support
- * No XML configuration needed
- */
 @Configuration
 @PropertySource("classpath:database.properties")
 @EnableTransactionManagement
@@ -48,7 +43,6 @@ public class DataSourceConfig {
 
     /**
      * HikariCP DataSource Configuration
-     * High-performance connection pooling
      */
     @Bean
     public DataSource dataSource() {
@@ -84,7 +78,6 @@ public class DataSourceConfig {
 
     /**
      * Hibernate Properties
-     * Optimized for MySQL 8 with Spring Data JPA
      */
     private Properties hibernateProperties() {
         Properties properties = new Properties();

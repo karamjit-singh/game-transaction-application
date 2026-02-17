@@ -74,7 +74,7 @@ sudo apt-get install openjdk-8-jdk maven mysql-server
 ### Step 1: Clone the Repository
 
 ```bash
-cd D:\Workspace\java
+cd C:\workspace
 git clone <repository-url>
 cd game-transaction-application
 ```

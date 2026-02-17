@@ -10,10 +10,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-/**
- * Spring MVC Configuration
- * Java-based configuration, no XML files
- */
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.gametransaction"})
