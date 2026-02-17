@@ -10,11 +10,6 @@ import javax.servlet.FilterRegistration;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;
 
-/**
- * Web Application Initializer - replaces web.xml
- * Pure Java configuration, no XML files needed
- * Spring Data JPA automatically configured via @EnableJpaRepositories
- */
 public class AppInitializer implements WebApplicationInitializer {
 
     @Override
